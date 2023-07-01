@@ -12,22 +12,21 @@
         android:layout_centerInParent="true">
 
         <TextView
-            android:layout_above="@+id/rlWeightHeight"
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/rlWeightHeight"
             android:text="@string/title"
-            android:textSize="25sp"
-            android:textStyle="bold"
             android:textAlignment="center"
-            />
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <RelativeLayout
             android:id="@+id/rlWeightHeight"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true">
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp">
 
             <RelativeLayout
                 android:id="@+id/rlBodyWeight"
@@ -38,10 +37,10 @@
                     android:id="@+id/tvBodyWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
                     android:text="@string/weight_label"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_centerHorizontal="true"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etBodyWeight"
@@ -49,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvBodyWeight"
                     android:layout_marginTop="8dp"
-                    android:hint="@string/weight_hint"/>
+                    android:hint="@string/weight_hint" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -76,7 +75,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="@string/height_label"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etHeight"
@@ -84,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvHeight"
                     android:layout_marginTop="8dp"
-                    android:hint="@string/height_hint"/>
+                    android:hint="@string/height_hint" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -94,7 +93,7 @@
                     android:layout_marginTop="18dp"
                     android:layout_toEndOf="@id/etHeight"
                     android:text="@string/height_ft"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/etHeightInch"
@@ -102,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etHeight"
                     android:layout_marginTop="8dp"
-                    android:hint="@string/height_hint"/>
+                    android:hint="@string/height_hint" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -112,7 +111,7 @@
                     android:layout_marginTop="18dp"
                     android:layout_toEndOf="@id/etHeightInch"
                     android:text="@string/height_inch"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
             </RelativeLayout>
 
         </RelativeLayout>
@@ -122,49 +121,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rlWeightHeight"
-            android:layout_marginTop="30dp"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+
                 <RadioButton
                     android:id="@+id/rbMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/male"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <RadioButton
                     android:id="@+id/rbFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/rbMale"
                     android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/rbMale"
                     android:text="@string/female"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
             </RelativeLayout>
         </RadioGroup>
 
         <Button
             android:id="@+id/btnCalculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
             android:layout_below="@+id/rgGender"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:textSize="18sp"
-            android:text="@string/button_text"/>
+            android:text="@string/button_text"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/result_text"
             android:layout_below="@+id/btnCalculate"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/result_text"
             android:textSize="28sp"
-            android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
