@@ -7,49 +7,55 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/rlBodyWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tvBodyWeight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Body Weight (lbs)"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/etBodyWeight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvBodyWeight"
-            android:layout_marginTop="8dp"
-            android:hint="130" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_toEndOf="@+id/rlBodyWeight"
-        android:id="@+id/rlHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp">
+        android:layout_centerInParent="true">
 
-        <TextView
-            android:id="@+id/tvHeight"
+        <RelativeLayout
+            android:id="@+id/rlBodyWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBodyWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body Weight (lbs)"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etBodyWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBodyWeight"
+                android:layout_marginTop="8dp"
+                android:hint="130" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Height (ft)"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/rlBodyWeight">
 
-        <EditText
-            android:id="@+id/etHeight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvHeight"
-            android:layout_marginTop="8dp"
-            android:hint="5.7" />
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (ft)"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHeight"
+                android:layout_marginTop="8dp"
+                android:hint="5.7" />
+        </RelativeLayout>
     </RelativeLayout>
 
 </RelativeLayout>
