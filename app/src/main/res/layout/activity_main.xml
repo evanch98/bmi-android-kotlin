@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvBodyWeight"
                     android:layout_marginTop="8dp"
-                    android:hint="130" />
+                    android:hint="@string/weight_hint" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvHeight"
                     android:layout_marginTop="8dp"
-                    android:hint="5" />
+                    android:hint="@string/height_hint" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etHeight"
                     android:layout_marginTop="8dp"
-                    android:hint="5" />
+                    android:hint="@string/height_hint" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -151,7 +151,7 @@
             android:layout_below="@+id/rgGender"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:text="Calculate"/>
+            android:text="@string/button_text"/>
 
     </RelativeLayout>
 
