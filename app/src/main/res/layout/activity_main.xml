@@ -129,7 +129,7 @@
                 android:id="@+id/rbMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/male"
+                android:text="@string/teen"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -137,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="@string/female"
+                android:text="@string/adult"
                 android:textSize="16sp" />
 
         </RadioGroup>
