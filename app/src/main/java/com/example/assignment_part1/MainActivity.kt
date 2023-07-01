@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
       val height = convertHeightToInch(heightFeet = heightFeet, heightInch = heightInch)
       val bmiCalculator = BmiCalculator(weight, height)
       val bmiResult = bmiCalculator.getResult()
+      if (bmiResult === BmiResult.NORMAL) {
+        tvResult.setTextColor(getColor(R.color.green))
+      } else {
+        tvResult.setTextColor(getColor(R.color.red))
+      }
       tvResult.text = bmiResult.text
     }
   }
