@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
       val heightFeet = etHeightFeet.text.toString().toDouble()
       val heightInch = etHeightInch.text.toString().toDouble()
       val height = convertHeightToInch(heightFeet = heightFeet, heightInch = heightInch)
-
+      val bmiCalculator = BmiCalculator(weight, height)
+      bmiResult = bmiCalculator.getResult()
     }
   }
 }
