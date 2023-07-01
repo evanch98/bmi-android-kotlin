@@ -40,11 +40,12 @@
                     android:layout_height="wrap_content"
                     android:text="@string/weight_label"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"/>
 
                 <EditText
                     android:id="@+id/etBodyWeight"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvBodyWeight"
                     android:layout_marginTop="8dp"
@@ -72,13 +73,14 @@
                     android:id="@+id/tvHeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
                     android:text="@string/height_label"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etHeight"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvHeight"
                     android:layout_marginTop="8dp"
@@ -96,7 +98,7 @@
 
                 <EditText
                     android:id="@+id/etHeightInch"
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etHeight"
                     android:layout_marginTop="8dp"
