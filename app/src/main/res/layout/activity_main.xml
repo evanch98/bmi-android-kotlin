@@ -16,7 +16,7 @@
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Body Mass Index in Imperial Unit"
+            android:text="@string/title"
             android:textSize="25sp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -38,7 +38,7 @@
                     android:id="@+id/tvBodyWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weight"
+                    android:text="@string/weight_label"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
                     android:layout_marginStart="6dp"
                     android:layout_marginTop="18dp"
                     android:layout_toEndOf="@id/etBodyWeight"
-                    android:text="lbs"
+                    android:text="@string/weight_unit"
                     android:textSize="16sp" />
             </RelativeLayout>
 
@@ -72,7 +72,7 @@
                     android:id="@+id/tvHeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Height"
+                    android:text="@string/height_label"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -91,7 +91,7 @@
                     android:layout_marginStart="6dp"
                     android:layout_marginTop="18dp"
                     android:layout_toEndOf="@id/etHeight"
-                    android:text="ft"
+                    android:text="@string/height_ft"
                     android:textSize="16sp" />
 
                 <EditText
@@ -109,7 +109,7 @@
                     android:layout_marginStart="6dp"
                     android:layout_marginTop="18dp"
                     android:layout_toEndOf="@id/etHeightInch"
-                    android:text="inch"
+                    android:text="@string/height_inch"
                     android:textSize="16sp" />
             </RelativeLayout>
 
