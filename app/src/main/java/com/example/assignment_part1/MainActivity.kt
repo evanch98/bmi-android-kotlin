@@ -8,16 +8,15 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-  private val etWeight: EditText = findViewById(R.id.etBodyWeight)
-  private val etHeightFeet: EditText = findViewById(R.id.etHeight)
-  private val etHeightInch: EditText = findViewById(R.id.etHeightInch)
-  private val btnCalculate: Button = findViewById(R.id.btnCalculate)
-  private val tvResult: TextView = findViewById(R.id.tvResult)
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
 
-    var bmiResult = BmiResult.NORMAL
+    val etWeight: EditText = findViewById(R.id.etBodyWeight)
+    val etHeightFeet: EditText = findViewById(R.id.etHeight)
+    val etHeightInch: EditText = findViewById(R.id.etHeightInch)
+    val btnCalculate: Button = findViewById(R.id.btnCalculate)
+    val tvResult: TextView = findViewById(R.id.tvResult)
 
     btnCalculate.setOnClickListener {
       val weight: Int = etWeight.text.toString().toInt()
@@ -25,7 +24,7 @@ class MainActivity : AppCompatActivity() {
       val heightInch = etHeightInch.text.toString().toDouble()
       val height = convertHeightToInch(heightFeet = heightFeet, heightInch = heightInch)
       val bmiCalculator = BmiCalculator(weight, height)
-      bmiResult = bmiCalculator.getResult()
+      val bmiResult = bmiCalculator.getResult()
       tvResult.text = bmiResult.text
     }
   }
