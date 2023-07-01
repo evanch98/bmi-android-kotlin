@@ -7,12 +7,24 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_above="@+id/rlWeightHeight"
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body Mass Index in Imperial Unit"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
 
         <RelativeLayout
             android:id="@+id/rlWeightHeight"
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true">
@@ -26,8 +38,8 @@
                     android:id="@+id/tvBodyWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weight (lbs)"
-                    android:textSize="18sp"
+                    android:text="Weight"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -37,6 +49,16 @@
                     android:layout_below="@+id/tvBodyWeight"
                     android:layout_marginTop="8dp"
                     android:hint="130" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvBodyWeight"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@id/etBodyWeight"
+                    android:text="lbs"
+                    android:textSize="16sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -50,8 +72,8 @@
                     android:id="@+id/tvHeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Height (ft)"
-                    android:textSize="18sp"
+                    android:text="Height"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -60,7 +82,35 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvHeight"
                     android:layout_marginTop="8dp"
-                    android:hint="5.7" />
+                    android:hint="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHeight"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@id/etHeight"
+                    android:text="ft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etHeightInch"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etHeight"
+                    android:layout_marginTop="8dp"
+                    android:hint="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etHeight"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@id/etHeightInch"
+                    android:text="inch"
+                    android:textSize="16sp" />
             </RelativeLayout>
 
         </RelativeLayout>
@@ -70,7 +120,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rlWeightHeight"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -92,6 +143,15 @@
                     android:textSize="16sp"/>
             </RelativeLayout>
         </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgGender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Calculate"/>
 
     </RelativeLayout>
 
