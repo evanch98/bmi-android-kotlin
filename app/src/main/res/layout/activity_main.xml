@@ -16,14 +16,15 @@
             android:layout_height="wrap_content"
             android:text="Body Weight (lbs)"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/etBodyWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvBodyWeight"
             android:layout_marginTop="8dp"
-            android:hint="130"/>
+            android:hint="130" />
     </RelativeLayout>
 
 </RelativeLayout>
