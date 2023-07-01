@@ -2,7 +2,7 @@ package com.example.assignment_part1
 
 import kotlin.math.pow
 
-class BmiCalculator(private val weight: Int, private val height: Double) {
+class BmiCalculator(private val weight: Int, private val height: Double, private val age: String) {
   private var result: BmiResult = BmiResult.NORMAL;
   fun getResult(): BmiResult {
     this.calculate()
