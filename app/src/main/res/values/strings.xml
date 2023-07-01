@@ -10,4 +10,6 @@
     <string name="result_text">Result</string>
     <string name="weight_hint">120</string>
     <string name="height_hint">5</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>
