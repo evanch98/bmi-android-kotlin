@@ -3,6 +3,7 @@ package com.example.assignment_part1
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
   private val etHeightFeet: EditText = findViewById(R.id.etHeight)
   private val etHeightInch: EditText = findViewById(R.id.etHeightInch)
   private val btnCalculate: Button = findViewById(R.id.btnCalculate)
+  private val tvResult: TextView = findViewById(R.id.tvResult)
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
       val height = convertHeightToInch(heightFeet = heightFeet, heightInch = heightInch)
       val bmiCalculator = BmiCalculator(weight, height)
       bmiResult = bmiCalculator.getResult()
+      tvResult.text = bmiResult.text
     }
   }
 }
