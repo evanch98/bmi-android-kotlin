@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">assignment_part1</string>
+    <string name="app_name">BMI Calculator</string>
+    <string name="title">Body Mass Index in Imperial Unit</string>
+    <string name="weight_label">Weight</string>
+    <string name="height_label">Height</string>
+    <string name="weight_unit">lbs</string>
+    <string name="height_ft">ft</string>
+    <string name="height_inch">inch</string>
+    <string name="button_text">Calculate</string>
+    <string name="result_text">Result</string>
 </resources>
