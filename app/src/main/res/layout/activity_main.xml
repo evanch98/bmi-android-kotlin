@@ -116,32 +116,6 @@
 
         </RelativeLayout>
 
-        <RadioGroup
-            android:id="@+id/rgGender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/rlWeightHeight"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/teen"
-                android:textSize="16sp" />
-
-            <RadioButton
-                android:id="@+id/rbFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:text="@string/adult"
-                android:textSize="16sp" />
-
-        </RadioGroup>
-
         <Button
             android:id="@+id/btnCalculate"
             android:layout_width="300dp"
