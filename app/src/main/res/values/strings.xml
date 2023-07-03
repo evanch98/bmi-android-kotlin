@@ -10,6 +10,6 @@
     <string name="result_text">Result</string>
     <string name="weight_hint">120</string>
     <string name="height_hint">5</string>
-    <string name="teen">Teen</string>
-    <string name="adult">Adult</string>
+    <string name="metric">Metric</string>
+    <string name="imperial">Imperial</string>
 </resources>
