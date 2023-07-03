@@ -119,34 +119,11 @@
 
         </RelativeLayout>
 
-        <RadioGroup
-            android:id="@+id/rgUnit"
-            android:layout_below="@id/rlWeightHeight"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/imperial"
-                android:textSize="18sp"
-                android:checked="true"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/metric"
-                android:textSize="18sp"/>
-        </RadioGroup>
-
         <Button
             android:id="@+id/btnCalculate"
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:layout_below="@+id/rgUnit"
+            android:layout_below="@+id/rlWeightHeight"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:text="@string/button_text"
